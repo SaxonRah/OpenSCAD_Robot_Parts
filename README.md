@@ -3,7 +3,9 @@ Programmatic OpenSCAD Robot Parts.
 
 I will add more as time passes.
 
-If you have a robot part which you would like created in OpenSCAD, I can do it for you.
+If you have a robot part which you would like created in OpenSCAD, I can try and do it for you.
+
+Complicated parts will require a fee for my time. Simple parts might be made for free.
 
 Just E-Mail me at rah@paraboliclabs.tech or paraboliclabs@gmail.com
 
