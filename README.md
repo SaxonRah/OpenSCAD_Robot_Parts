@@ -19,5 +19,5 @@ You can customize almost all variables. The notable ones to customize are:
 
 Any size should have 12.5 taken from the number, the file does this for you if you plug your number in correctly
 
-![Printed Robot U Bracket Servo Type](Pictures/PrintedRobot_U_Bracket_ServoType.png "Printed Robot U Bracket Servo Type")
+![Printed Robot U Bracket Servo Type](Pictures/Printed_Robot_U_Bracket_ServoType.png "Printed Robot U Bracket Servo Type")
 Printed in PLA. Photo shows a Metal Servo Horn and 8mm Flange Bearing mounted to the U Bracket.
