@@ -1,7 +1,5 @@
 # OpenSCAD Robot Parts
-Programmatic OpenSCAD Robot Parts.
-
-I will add more as time passes.
+Programmatic OpenSCAD Robot Parts. I will add more as time passes.
 
 If you have a robot part which you would like created in OpenSCAD, I can try and do it for you.
 
