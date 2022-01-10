@@ -2,6 +2,7 @@
 Programmatic OpenSCAD Robot Parts
 
 ## Robot U Bracket (Servo Type)
+![Robot U Bracket Servo Type](Robot_U_Bracket_ServoType.png "Robot U Bracket Servo Type").
 This U Bracket is commonly found in cheap robot platforms.
 You can customize almost all variables. The notable ones to customize are:
 
