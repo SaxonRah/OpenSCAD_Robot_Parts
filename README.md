@@ -7,6 +7,8 @@ Complicated parts will require a fee for my time. Simple parts might be made for
 
 Just E-Mail me at rah@paraboliclabs.tech or paraboliclabs@gmail.com
 
+NOTE: Any part I make will be MIT licensed and uploaded here, so don't expect a private model to be made. Unless you really want to pay for my time.
+
 ## Robot U Bracket (Servo Type)
 ![Robot U Bracket Servo Type](Robot_U_Bracket_ServoType.png "Robot U Bracket Servo Type")
 
