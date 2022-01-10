@@ -1,5 +1,11 @@
 # OpenSCAD Robot Parts
-Programmatic OpenSCAD Robot Parts
+Programmatic OpenSCAD Robot Parts.
+
+I will add more as time passes.
+
+If you have a robot part which you would like created in OpenSCAD, I can do it for you.
+
+Just E-Mail me at rah@paraboliclabs.tech or paraboliclabs@gmail.com
 
 ## Robot U Bracket (Servo Type)
 ![Robot U Bracket Servo Type](Robot_U_Bracket_ServoType.png "Robot U Bracket Servo Type")
