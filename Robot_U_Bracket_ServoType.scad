@@ -1,15 +1,20 @@
 // Robert Valentine
 $fn = $preview ? 25 : 100;
 
+// TODO: Fix bracket_width and bracket_height calculations
+// 1. bracket_size needs to scale outwards not inward. (Inner Size MUST BE fixed in place.)
+// 2. bracket_height needs to move mounting hole locations with it.
+
 bracket_hub_length = 12.5;
 bracket_length = 44 - bracket_hub_length;
 //bracket_length = 64.5 - bracket_hub_length;
-bracket_width = 55.80;
 bracket_height = 25;
 bracket_thickness = 2.15;
+//bracket_width = 55.80 + bracket_thickness * 2;
+bracket_width = 55.80;
 bracket_walls = bracket_thickness * 2;
 bracket_size = [bracket_length, bracket_width, bracket_height];
-bracket_inner_size = [bracket_length*2, bracket_width-bracket_walls, bracket_height+2];
+bracket_inner_size = [bracket_length*2, bracket_width-bracket_walls, bracket_height*2];
 
 bearing_hole = 8.15;
 mounting_hole = 3;
@@ -33,7 +38,7 @@ difference(){
             translate([bracket_length, bracket_width/2, bracket_hub_length])
             rotate([90, 0, 0])
             // Create Cylinder Ends
-            cylinder(h=bracket_width, r=bracket_hub_length, center=true);
+            cylinder(h=bracket_width, d=bracket_height, center=true);
             // Move Origin to Inner Bracket Location
             translate([bracket_thickness, bracket_thickness, -1])
             // Create Inner Bracket Cylinder Ends and Cutout
@@ -44,7 +49,7 @@ difference(){
     union(){
         // Bracket Bottom Bearing Mounting Hole
         translate(
-            [bracket_length/2,
+            [0,
             bracket_width/2,
             mounting_hole_distance]
         )
@@ -53,16 +58,16 @@ difference(){
 
         // Bracket Top Bearing Mounting Hole
         translate(
-            [bracket_length/2,
+            [0,
             bracket_width/2,
-            bracket_height-mounting_hole_distance]
+            bracket_hub_length + mounting_hole_seperation]
         )
         rotate([0, 90, 0])
         cylinder(h=bracket_width+2, d=mounting_hole, center=true);
 
         // Bracket Left Bearing Mounting Hole
         translate(
-            [bracket_length/2,
+            [0,
             bracket_width/2 - mounting_hole_seperation,
             bracket_hub_length]
         )
@@ -71,7 +76,7 @@ difference(){
 
         // Bracket Right Bearing Mounting Hole
         translate(
-            [bracket_length/2,
+            [0,
             bracket_width/2 + mounting_hole_seperation,
             bracket_hub_length]
         )
@@ -80,7 +85,7 @@ difference(){
 
         // Bracket Bearing Hole
         translate(
-            [bracket_length/2,
+            [0,
             bracket_width/2,
             bracket_hub_length]
         )
